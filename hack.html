@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Whatapps crack.2.0</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #020805;
+  color: #00ff66;
+  font-family: monospace;
+  padding: 20px;
+  margin: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  border: 1px solid #00ff66;
+  padding: 20px;
+  box-shadow: 0 0 20px #00ff6644;
+}
+
+h1 {
+  text-align: center;
+  text-shadow: 0 0 12px #00ff66;
+}
+
+.notice {
+  color: #fff;
+  background: #183020;
+  padding: 10px;
+  text-align: center;
+  font-size: 12px;
+}
+
+#logs {
+  height: 230px;
+  overflow: auto;
+  margin-top: 20px;
+  line-height: 2;
+  font-size: 13px;
+}
+
+.bar {
+  height: 12px;
+  border: 1px solid #00ff66;
+  margin-top: 20px;
+}
+
+#progress {
+  height: 100%;
+  width: 0%;
+  background: #00ff66;
+  transition: width .3s;
+}
+
+#percent {
+  text-align: center;
+  margin-top: 10px;
+}
+
+#result {
+  display: none;
+  text-align: center;
+  color: white;
+  margin-top: 25px;
+  padding: 15px;
+  border: 1px solid #00ff66;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+<h1> DARK ARMY!<h1>
+<h1>WHATAPPS CRACK 2.0 </h1>
+
+<div class="notice">
+  cracking your device. login access 
+</div>
+
+<div id="logs"></div>
+
+<div class="bar">
+  <div id="progress"></div>
+</div>
+
+<div id="percent">0%</div>
+
+<div id="result">
+  <h2>JUNK FILE COMPLETE</h2>
+  <p>YoUR WHATSAPP HACK!</p>
+  <p>Login success.ID CRACK</p>
+</div>
+
+</div>
+
+<script>
+
+const logs = [
+  "HACKING START.WHATAPPS CRACK...",
+  "Starting visual terminal...",
+  "Checking networkings...",
+  "Scanning simulated network...",
+  "CRACKING WHAT APP ID...",
+  "Testing security awareness...",
+  "Running final simulation..."
+];
+
+let count = 0;
+const totalTime = 40000;
+
+const logBox = document.getElementById("logs");
+
+function runSimulation() {
+  if (count < logs.length) {
+    const line = document.createElement("div");
+    line.textContent = "> " + logs[count];
+    logBox.appendChild(line);
+
+    count++;
+
+    setTimeout(runSimulation, totalTime / logs.length);
+  } else {
+    document.getElementById("progress").style.width = "100%";
+    document.getElementById("percent").textContent = "100%";
+    document.getElementById("result").style.display = "block";
+  }
+}
+
+let start = Date.now();
+
+function updateProgress() {
+  let elapsed = Date.now() - start;
+  let percent = Math.min(100, Math.floor(elapsed / totalTime * 100));
+
+  document.getElementById("progress").style.width = percent + "%";
+  document.getElementById("percent").textContent = percent + "%";
+
+  if (elapsed < totalTime) {
+    setTimeout(updateProgress, 500);
+  }
+}
+
+runSimulation();
+updateProgress();
+
+</script>
+
+</body>
+</html>
